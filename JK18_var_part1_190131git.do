@@ -17,34 +17,17 @@ set more off;
 
 set maxvar 12000;
 
-cd "C:\DATA\JK18\var";
-* cd "C:\JHPS_KHPS\"; 
+cd "working directory";
 
 log using JK18_var_prt1_190131.log, replace;
 
 /* JK18 */
-global JK18 "C:\JHPS_KHPS\JHPS_KHPS.dta";
+global JK18 "location of data file";
 
 /* doファイル */
-global dof "C:\DATA\JK18\var\家族表";
-* global dof "C:\JHPS_KHPS\do_file\家族表\";
-
-/* 市区町村データ */
-/* C:\Users\Kazuto Sumita\Dropbox\DATA\JK18\JHPSKHPS2018_city */
-global JK18_city_csv "..\JHPSKHPS2018_city\city_jk18_dat.csv";
-
-/* id データ */
-global JK18_id_csv "..\id\jk_id_dat.csv";
+global dof "location of data file";
 
 
-/* 調査員データ　*/
-global JK18_intvw_dat "..\JHPSKHPS2018_investigators\jk18_intvw.dta";
-
-/* 出力ファイル */
-global output_data JK18_var_part1_190131.dta;
-
-/*個人用　*/
-global output_data_ks JK18_var_part1_190131ks.dta;
 /* 途中保存データ */
 global temp_dat temp.dta;
 
